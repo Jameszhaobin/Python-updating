@@ -1,4 +1,4 @@
-##Linux命令的基本使用  
+## Linux命令的基本使用  
 ls          list                 查看当前文件夹下的目录
 pwd         print wrok directory 查看当前所在文件夹
 cd[目录名]   change directory     切换文件夹，进入该文件夹下
@@ -18,3 +18,5 @@ mkdir --help
 
 1.1终端实用技巧
 1>自动补全  tab键
+2>曾经使用过的命令 如果不想执行当前选中的命令，可以按ctrl+c
+1.2
