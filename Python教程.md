@@ -1,12 +1,12 @@
-# Linux命令的基本使用  
+Linux命令的基本使用  
 ls          list                 查看当前文件夹下的目录  
 pwd         print wrok directory 查看当前所在文件夹  
-cd[目录名]   change directory     切换文件夹，进入该文件夹下  
-touch[目录名]                     如果文件不存在，创建文件  
-mkdir[目录名] make directory      创建目录  
-rm[文件名]   remove               删除指定的文件名  
-rm -r [目录名]                    删除指定的文件夹  
-Linux终端命令格式  
+cd [目录名]   change directory     切换文件夹，进入该文件夹下  
+touch [目录名]                     如果文件不存在，创建文件  
+mkdir [目录名] make directory      创建目录  
+rm [文件名]   remove               删除指定的文件  
+rm -r [目录名]                     删除指定的文件夹  
+# Linux终端命令格式  
 01.终端命令格式  
 command [-optios] [parameter]  
 说明：  
@@ -65,6 +65,21 @@ tree -d 只显示目录，不显示文件
 ## 4.2 cp
 cp 源文件 目标文件  复制源文件到目标目录下  
 cp ~/Documents/readme.txt . 复制到当前文件夹下  
+cp -r 复制文件夹 （cp后面跟的是文件，只能复制文件，要想复制文件夹，要用cp -r命令）
+如果文件夹下已经有该文件，继续复制会覆盖掉原来的文件，但是没有提示是否覆盖，要是有提示，执行下面命令  
+cp -i 覆盖文件前提示  
+cp -i ~/Documents/readme.txt .  
+## 4.3 mv
+mv 可以用来移动文件或目录，也可以给文件或者目录重命名（路径不变，修改文件名）  
+mv 源文件 目标文件  
+mv -i 有提示
+## 5.1 cat
+用来查看文件内容；会一次显示所有的内容，适合查看内容少的文本文件
+cat [文件名]  查看该文件内容  
+cat -b [文件名] 对非空输出行编号  
+cat -n [文件名] 对输出的所有行编号  
+## 5.2 more
+用于分屏显示文件内容，每次只显示一页内容
 
 
 
