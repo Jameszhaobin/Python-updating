@@ -142,7 +142,21 @@ scp -P port 01.py user@remote：Desktop/01.py  复制01.py文件到指定计算�
 scp -P user@remote:Desktop/01.py 01.py  把远程家目录下的Desktop/01.py文件复制到本地当前目录下的01.py  
 -r 复制目录  
 -P 指定端口  
-
+scp -P 22 python@172.16.140.138：Desktop/01.py .  
+复制目录加-r  
+scp这个终端命令只能在Linux或者UNIX系统下使用  
+### 3.3 SSH高级
+·免密码登录  
+·配置别名  
+有关SSH配置信息都保存在用户家目录下的.ssh目录下  
+ssh-keygen  
+ssh-copy-id ssh-copy-id itheima@172.16.140.1  
+免密码登录步骤：  
+·配置公钥  
+  ·执行ssh-keygen即可生成SSH钥匙，一路回车即可  
+  ·上传公钥到服务器  
+    ·执行ssh-copy-id -p port user@remote，可以让远程服务器记住我们的公钥  
+    
 
 
 
