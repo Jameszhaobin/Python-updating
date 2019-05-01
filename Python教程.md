@@ -117,7 +117,34 @@ ping一下某个计算机，看他是否开着
 ctrl+c 终止一个终端程序的执行  
 ## 03 远程登录和复制文件
 # 3.1 ssh基础
-SSH客户端可以连接到运行了SSh服务器的远程机器上
+SSH客户端可以连接到运行了SSh服务器的远程机器上  
+1）域名和端口号  
+域名是IP地址的别名 www.baidu.com  
+IP地址：通过IP地址找到网络上的计算机  
+端口号：通过端口号可以找到计算机运行的应用程序  
+常见的服务端口号  
+SSH服务器 22  
+Web服务器 80  
+HTTPS 443  
+FTP服务器 21  
+2）SSH客户端的简单使用  
+ssh [-p port] user@remote  （remote指的是远程计算机的IP地址）  
+ssh -p 22 python@172.16.140.138  
+exit 退出远程登录  
+sudo 超级用户  
+sudo shutdown -r now  
+3）Windows下SSH客户端的安装  
+Putty  
+XShell  
+### 3.2 scp
+远程拷贝文件  
+scp -P port 01.py user@remote：Desktop/01.py  复制01.py文件到指定计算机的桌面上  
+scp -P user@remote:Desktop/01.py 01.py  把远程家目录下的Desktop/01.py文件复制到本地当前目录下的01.py  
+-r 复制目录  
+-P 指定端口  
+
+
+
 
 
 
