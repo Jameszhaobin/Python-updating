@@ -156,6 +156,14 @@ ssh-copy-id ssh-copy-id itheima@172.16.140.1
   ·执行ssh-keygen即可生成SSH钥匙，一路回车即可  
   ·上传公钥到服务器  
     ·执行ssh-copy-id -p port user@remote，可以让远程服务器记住我们的公钥  
+2）配置别名  
+在ssh中创建一个文件 用touch config  
+在~/.ssh/config里面编辑以下内容：  
+Host mac  
+  HostName ip地址  
+  User itheima  
+  Port 22  
+
     
 
 
