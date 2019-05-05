@@ -190,8 +190,31 @@ chgrp -R dev Python/学习/
 useradd -m -g 组 新建用户名   添加新用户  
 passwd用户名                 设置用户密码  
 userdel -r 用户名            删除用户  
+usermod                     用来设置用户的主组/附加组和登录Shell  
+usermod -g 组 用户名            修改用户的主组  
+usermod -G 组 用户名            修改用户的附加组  
+usermod -s /bin/bash/用户名     修改用户登录Shell （在xp中登录ubantu默认是dash，不方便。修改为bash）  
 ### 3.2 查看用户信息
 id+用户名 查看用户uid和gid信息  
+who 查看当前所有用户登录的用户列表  
+whoami 查看当前登录用户的账户名  
+**which**         可以查看执行命令所在的位置  
+/etc/passwd       是用于保存用户信息的文件  
+/user/bin/passwd  是用于修改用户密码的程序  
+在linux中，绝大多数可执行文件都是保存在以下几种中：  
+/bin（binary） 是二进制执行文件目录，主要用于具体应用  
+/sbin （system binary） 是系统管理员专用的二进制代码存放的目录，主要用于系统管理  
+/usr/bin（user commands for applications） 后期安装的一些软件  
+/usr/sbin（super user commands for applications） 超级用户的一些管理程序  
+### 3.3 切换用户  
+su 用户名        切换用户。并且切换目录  
+exit 退出**当前登录账号**  
+su不接用户名，可以切换到root，但是不推荐，因为不安全  
+## 04 修改文件权限 
+chown 修改拥有者  
+chgrp 修改组  
+chmod 修改权限  
+
 
 
 
