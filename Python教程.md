@@ -163,7 +163,21 @@ Host mac
   HostName ip地址  
   User itheima  
   Port 22  
-
+# 用户权限相关命令
+### 1.1 基本概念
+### 1.3 ls-l扩展
+-     r w -      r w -   r - -  
+d     r w -      r w -   r - -  
+目录   拥有者权限  组权限   其他用户权限  
+硬链接数  
+### 1.4 chomd简单使用
+可以修改用户/组对文件/目录的权限  
+chmod -rw 01.py  取消读写权限  
+chmod +r 01.py  增加读权限  
+chmod +w 01.py 增加写权限  
+### 1.5 超级用户
+root用于系统维护和管理
+### 1.5 超级用户
     
 
 
