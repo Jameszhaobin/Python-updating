@@ -247,7 +247,27 @@ Mac zip
 Linux tar.gz  
 打包文件：tar -cvf 打包文件.tar   被打包的文件/路径...  
 解包文件：tar -xvf 打包文件.tar  
-
+#### 3.2 压缩/解压
+  1）gzip  
+  ·tar与gzip命令结合使用可以实现打包和压缩  
+    ·tar只负责打包文件，但不压缩  
+    ·gzip压缩tar打包后的文件，其扩展名一般用xxx.tar.gz  
+压缩文件：tar -zcvf 打包文件.tar.gz 被打包的文件/路径...  
+解压文件：tar -zxvf 打包文件.tar.gz    
+  2）bzip2（two）  
+压缩文件：tar -jcvf 打包文件.tar.bz2 被打包的文件/路径...  
+解压文件：tar -jxvf 打包文件.tar.bz2    
+tar -jxvf 打包文件.tar.bz2 -C 目标路径  
+### 04 软件安装
+apt  
+1.安装文件  
+sudo apt install 软件包  
+2.卸载软件  
+sudo apt remove 软件名  
+3.更新已安装的包  
+sudo apt update  
+#### 4.2 配置软件源
+镜像源：所有服务器的内容是相同的（镜像）  
 
 
   
